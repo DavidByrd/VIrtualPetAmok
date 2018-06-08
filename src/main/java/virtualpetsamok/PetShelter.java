@@ -5,26 +5,39 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class PetShelter {
+	
+	Map<String, VirtualPets> virtualPets = new HashMap<>();
 
-	public int petsSize() {
-		// TODO Auto-generated method stub
-		return 0;
+	public void addPet(OrganicDog oDogTest) {
+		virtualPets.put(oDogTest.getPetName(), oDogTest);
 	}
 
-	public void addPets(OrganicDog oDogTest) {
-		// TODO Auto-generated method stub
+	public Collection<VirtualPets> getAllPets() {
 		
+		return virtualPets.values();
 	}
-
-	public VirtualPetAmok getPetByName(String petName) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public void addPets(OrganicCat testRobot) {
-		// TODO Auto-generated method stub
-		
-	}
+	
+//	private Map<String, VirtualPets> underTest = new HashMap<String, VirtualPets>();
+//
+//	public int petsSize() {
+//		// TODO Auto-generated method stub
+//		return 0;
+//	}
+//
+//	public void addPets(OrganicDog oDogTest) {
+//		underTest.put(((VirtualPet) underTest).getPetName(), underTest);
+//		
+//	}
+//
+//	public VirtualPetAmok getPetByName(String petName) {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
+//
+//	public void addPets(OrganicCat testRobot) {
+//		// TODO Auto-generated method stub
+//		
+//	}
 	
 //	Map<String,VirtualPetAmok> pets = new HashMap<>();
 //
@@ -32,13 +45,13 @@ public class PetShelter {
 //		pets.put(underTest.getPetName(), underTest);
 //
 //		
-//	}
-//
-//	public Collection<VirtualPetAmok> getAllPets() {
+	//}
+
+//	public Collection<VirtualPets> getAllPets1() {
 //
 //		return pets.values();
 //	}
-
+//
 //	Map<String,OrganicPet> pets = new HashMap<>();
 //
 //	public void addPet(OrganicDog oDogTest) {
@@ -47,7 +60,7 @@ public class PetShelter {
 //		
 //	}
 //
-//	public Collection<VirtualPetAmok> getAllPets() {
+//	public Collection<VirtualPets> getAllPets() {
 //
 //		return pets.values();
 //	}

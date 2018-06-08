@@ -45,6 +45,8 @@ public void petShouldHaveHealth() {
 	int check = underTest.getHealth();
 	assertEquals(check, 20);
 }
+
+
 	
 	
 	
