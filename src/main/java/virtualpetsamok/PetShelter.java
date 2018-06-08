@@ -8,8 +8,8 @@ public class PetShelter {
 	
 	Map<String, VirtualPets> virtualPets = new HashMap<>();
 
-	public void addPet(OrganicDog oDogTest) {
-		virtualPets.put(oDogTest.getPetName(), oDogTest);
+	public void addPet(VirtualPets pets) {
+		virtualPets.put(pets.getPetName(), pets);
 	}
 
 	public Collection<VirtualPets> getAllPets() {
