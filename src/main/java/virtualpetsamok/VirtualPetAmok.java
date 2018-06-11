@@ -36,4 +36,23 @@ public class VirtualPetAmok {
 		return health;
 	}
 
+	public void getick() {
+
+		
+		health -= 1;
+		happiness -= 1;
+		
+		
+		System.out.println("Tick tock, tick tock,");
+		System.out.println("health: " + health + " happiness: " + happiness);
+
 }
+		
+	
+
+	
+		
+		;
+	}
+
+

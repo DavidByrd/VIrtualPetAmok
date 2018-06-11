@@ -31,5 +31,15 @@ public class VirtualPets {
 
 		return health;
 	}
+	
+public void tick( ) {
+		
+		health -= 1;
+		happiness -= 1;
+		
+	
+		System.out.println("Tick tock, tick tock,");
+		System.out.println( " Health: " + health + " happiness: " + happiness);
 
+}
 }

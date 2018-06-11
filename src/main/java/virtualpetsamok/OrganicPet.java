@@ -30,5 +30,14 @@ public class OrganicPet extends VirtualPets {
 		thirstLevel -= amount;
 
 	}
+public void organicTick( ) {
+		
+	
+		
+		thirstLevel += 1;
+		hungerLevel =+ 1;
+		System.out.println("Tick tock, tick tock,");
+		System.out.println("hunger: " + hungerLevel + " thirst: " + thirstLevel + " happiness: " + happiness);
 
+}
 }

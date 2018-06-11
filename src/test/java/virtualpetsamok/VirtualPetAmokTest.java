@@ -2,7 +2,6 @@ package virtualpetsamok;
 
 import static org.junit.Assert.assertEquals;
 
-import org.junit.Before;
 import org.junit.Test;
 
 public class VirtualPetAmokTest {
@@ -46,9 +45,13 @@ public void petShouldHaveHealth() {
 	assertEquals(check, 20);
 }
 
+public void petShouldHaveTick() {
+	
+
+
 
 	
-	
+}
 	
 	
 	

@@ -22,5 +22,14 @@ public class RoboticCat extends VirtualPets {
 		rustLevel -= amount;
 		
 	}
+	public void RoboticTick( ) {
+	
+	rustLevel += 1;
+	
+	
+	
+	System.out.println("Tick tock, tick tock,");
+	System.out.println("RustLevel: " + rustLevel);
 
+}
 }

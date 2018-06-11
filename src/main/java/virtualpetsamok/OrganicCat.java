@@ -4,8 +4,8 @@ public class OrganicCat extends OrganicPet {
 
 	private int litterBoxCleanlinessLevel;
 
-	public OrganicCat(String string, String string2, int i, int j) {
-		super(string2, string2, j, j);
+	public OrganicCat(String name, String description, int health, int happiness) {
+		super(name, description, health, happiness);
 	}
 
 	public int getLitterBoxCleanlinessLevel() {

@@ -4,8 +4,13 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-public class PetShelter {
+public class PetShelter extends VirtualPets {
 	
+	public PetShelter(String name, String description, int health, int happiness) {
+		super(name, description, health, happiness);
+		// TODO Auto-generated constructor stub
+	}
+
 	Map<String, VirtualPets> virtualPets = new HashMap<>();
 
 	public void addPet(VirtualPets pets) {
@@ -16,6 +21,32 @@ public class PetShelter {
 		
 		return virtualPets.values();
 	}
+
+	public void tick(OrganicDog oganicDog1) {
+		health -= 1;
+		happiness -= 1;
+		
+		
+		System.out.println("Tick tock, tick tock,");
+		System.out.println("health: " + health +  " happiness: " + happiness);
+	
+		
+	}
+
+	public void tick(OrganicCat oganicCat1) {
+		health -= 1;
+		happiness -= 1;
+		
+		
+		System.out.println("Tick tock, tick tock,");
+		System.out.println("health: " + health +  " happiness: " + happiness);
+		
+		
+	}
+	
+	
+	
+
 	
 //	private Map<String, VirtualPets> underTest = new HashMap<String, VirtualPets>();
 //
